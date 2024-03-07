@@ -2,7 +2,7 @@
 
 Para desenvolver as atividades da disciplina de Computação Gráfica favor utilizar as respectivas pastas para postar os trabalhos de cada unidade.  
 
-Alunos:  
+Alunos: Arthur Bezerra Pinotti - Felipe Melio Tomelin - Gustavo Baroni Bruder - Luiz Gustavo Klitzke  
 
 ## [Atividades da Unidade 1](Unidade1/ "Atividades da Unidade 1")
 
