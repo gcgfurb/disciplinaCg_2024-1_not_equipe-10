@@ -26,8 +26,8 @@ namespace gcgcg
 
     private readonly float[] _sruEixos =
     [
-       0.0f,  0.0f,  0.0f, /* X- */      0.5f,  0.0f,  0.0f, /* X+ */
-       0.0f,  0.0f,  0.0f, /* Y- */      0.0f,  0.5f,  0.0f, /* Y+ */
+       -0.5f,  0.0f,  0.0f, /* X- */      0.5f,  0.0f,  0.0f, /* X+ */
+       0.0f,  -0.5f,  0.0f, /* Y- */      0.0f,  0.5f,  0.0f, /* Y+ */
        0.0f,  0.0f,  0.0f, /* Z- */      0.0f,  0.0f,  0.5f  /* Z+ */
     ];
 
@@ -140,7 +140,10 @@ namespace gcgcg
       }
       if (KeyboardState.IsKeyPressed(Keys.P))
       {
-        Console.WriteLine("Tecla P");
+        if (objetoSelecionado != null)
+          objetoSelecionado.PrimitivaTipo = objetoSelecionado.PrimitivaTipo == PrimitiveType.LineStrip
+            ? PrimitiveType.LineLoop
+            : PrimitiveType.LineStrip;
       }
       if (KeyboardState.IsKeyPressed(Keys.R))
       {

@@ -1,0 +1,20 @@
+@startuml
+class EditorVetorialPoligonos {
+    + EditorVetorialPoligonos(_paiRef:Objeto, _rotulo:char)
+    + EstaEditandoPoligono() : bool
+    + AdicionarNovoPoligono(poligono:Poligono) : void
+    + AdicionarPontoPoligono(ponto:Ponto4D) : void
+    + AlterarPontoRastroPoligono(ponto:Ponto4D) : void
+    + FinalizarPoligono() : void
+    + ObterPoligonoSelecionado() : Poligono
+    + SelecionarPoligono(pontoClique:Ponto4D) : Poligono
+    + RemoverPoligonoSelecionado() : void
+    + AlterarPontoMaisProximoPoligonoSelecionado(pontoClique:Ponto4D) : void
+    + RemoverPontoMaisProximoPoligonoSelecionado(pontoClique:Ponto4D) : void
+    + TranslacaoPoligonoSelecionado(tx:double, ty:double, tz:double) : void
+    + EscalaPoligonoSelecionado(tx:double, ty:double, tz:double) : void
+    + RotacaoPoligonoSelecionado(angulo:double) : void
+    + <<override>> ToString() : string
+}
+Objeto <|-- EditorVetorialPoligonos
+@enduml
